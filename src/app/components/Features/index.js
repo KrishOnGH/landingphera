@@ -20,7 +20,7 @@ export default function index() {
 	return (
 		<div>
 			<section className="section-blue-purple text-[#8C8C8C] body-font">
-				<div className='bg-[#27335F]/[0.2] min-h-dvh pb-32 lg:pb-5 flex flex-col pt-20 md:pt-40 lg:pt-1'>
+				<div className='bg-[#27335F]/[0.2] min-h-dvh pb-4 md:pb-28 lg:pb-5 flex flex-col pt-20 md:pt-40 lg:pt-1'>
 					<div className="absolute top-0 left-0 md:w-96">
 						<img src="/graphics/second-left-ellipse.png" />
 					</div>

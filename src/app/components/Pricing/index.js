@@ -4,7 +4,7 @@ export default function index() {
 	return (
 		<div>
 			<section className="section-blue-purple text-[#8C8C8C] body-font">
-				<div className="bg-[#27335F]/[0.2] min-h-dvh pb-32 lg:p-0 flex flex-col pt-20 md:pt-40 lg:pt-1">
+				<div className="bg-[#27335F]/[0.2] min-h-dvh pb-4 md:pb-28 lg:p-0 flex flex-col pt-20 md:pt-40 lg:pt-1">
 					<div className="container mx-auto flex items-start md:items-center justify-center flex-col max-w-screen-md px-4 lg:pt-40 lg:px-1">
 						<div className="bg-gradient-to-r p-px from-[#0500E8] to-[#7000FF] rounded-full mb-3">
 							<button className="bg-[#1F1F1F] rounded-full py-2 px-8 md:px-6 text-xl ">
