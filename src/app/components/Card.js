@@ -5,7 +5,7 @@ export default function Card({ image_src, heading, sub_text}) {
 		<div>
 			<div className="p-4 z-50">
 				<div className="border border-[#595959] rounded-lg">
-					<div className="relative h-40 px-6 flex flex-row items-center border-b border-[#595959] bg-[#0B0E0F] bg-no-repeat bg-cover bg-[url('/graphics/box-net.png')] overflow-hidden">
+					<div className="relative h-40 px-6 flex flex-row items-center border-t rounded-lg border-[#595959] bg-[#0B0E0F] bg-no-repeat bg-cover bg-[url('/graphics/box-net.png')] overflow-hidden">
 						<div className="absolute -left-4 -top-4 ">
 							<img src="/graphics/card-top.png" />
 						</div>
@@ -22,7 +22,8 @@ export default function Card({ image_src, heading, sub_text}) {
 							{heading}
 						</h2>
 					</div>
-					<div className="bg-[#0B0E0F] p-6">
+					<hr className="border border-[#595959]" />
+					<div className="bg-[#0B0E0F] border-b border-[#595959] rounded-lg p-6">
 						<p className="leading-relaxed text-[#D9D9D9] text-sm">
 							{sub_text}
 						</p>

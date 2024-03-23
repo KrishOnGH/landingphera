@@ -19,14 +19,99 @@ const TWO_CARD = [
 export default function index() {
 	return (
 		<div>
-			<section className="section-blue-purple text-[#8C8C8C] body-font">
-				<div className='bg-[#27335F]/[0.2] min-h-dvh pb-4 md:pb-28 lg:pb-5 flex flex-col pt-20 md:pt-40 lg:pt-1'>
-					<div className="absolute top-0 left-0 md:w-96">
-						<img src="/graphics/second-left-ellipse.png" />
-					</div>
-					<div className="absolute top-0 right-0 md:w-96">
-						<img src="/graphics/second-right-ellipse.png" />
-					</div>
+			<section className="section-blue-purple text-[#8C8C8C] bg-[#030C14] body-font">
+				<div className="bg-[#030C14]/[0.4] min-h-dvh px-5 md:px-1 pb-4 md:pb-28 lg:pb-5 flex flex-col pt-20 md:pt-40 lg:pt-1">
+					<svg
+						className="hidden lg:flex absolute top-0 -left-40"
+						width="441"
+						height="1497"
+						viewBox="0 0 441 1497"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g opacity="0.3" filter="url(#filter0_f_130_897)">
+							<ellipse
+								cx="0.688132"
+								cy="748.588"
+								rx="448"
+								ry="139.5"
+								transform="rotate(-89.3353 0.688132 748.588)"
+								fill="#5000B5"
+							/>
+						</g>
+						<defs>
+							<filter
+								id="filter0_f_130_897"
+								x="-438.901"
+								y="0.615479"
+								width="879.178"
+								height="1495.95"
+								filterUnits="userSpaceOnUse"
+								color-interpolation-filters="sRGB"
+							>
+								<feFlood
+									flood-opacity="0"
+									result="BackgroundImageFix"
+								/>
+								<feBlend
+									mode="normal"
+									in="SourceGraphic"
+									in2="BackgroundImageFix"
+									result="shape"
+								/>
+								<feGaussianBlur
+									stdDeviation="150"
+									result="effect1_foregroundBlur_130_897"
+								/>
+							</filter>
+						</defs>
+					</svg>
+
+					<svg
+						className="hidden lg:flex absolute top-0 right-0"
+						width="440"
+						height="1497"
+						viewBox="0 0 440 1497"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g opacity="0.3" filter="url(#filter0_f_130_896)">
+							<ellipse
+								cx="439.688"
+								cy="748.588"
+								rx="448"
+								ry="139.5"
+								transform="rotate(-89.3353 439.688 748.588)"
+								fill="#5000B5"
+							/>
+						</g>
+						<defs>
+							<filter
+								id="filter0_f_130_896"
+								x="0.098877"
+								y="0.615479"
+								width="879.178"
+								height="1495.95"
+								filterUnits="userSpaceOnUse"
+								color-interpolation-filters="sRGB"
+							>
+								<feFlood
+									flood-opacity="0"
+									result="BackgroundImageFix"
+								/>
+								<feBlend
+									mode="normal"
+									in="SourceGraphic"
+									in2="BackgroundImageFix"
+									result="shape"
+								/>
+								<feGaussianBlur
+									stdDeviation="150"
+									result="effect1_foregroundBlur_130_896"
+								/>
+							</filter>
+						</defs>
+					</svg>
 
 					<div className="container mx-auto flex items-start md:items-center justify-center flex-col max-w-screen-md px-4 lg:pt-40 lg:px-1">
 						<div className="bg-gradient-to-r p-px from-[#0500E8] to-[#7000FF] rounded-full mb-3">
@@ -43,9 +128,10 @@ export default function index() {
 							<div className="justify-center flex ">
 								<p className="leading-relaxed mb-8 lg:w-3/5 text-sm md:text-center text-[#817EB5]">
 									Experience the extraordinary capabilities of
-									Phera, powered by GPT-4 technology. Seamlessly
-									connect and interact with accelerated
-									performance, revolutionizing your AI experience.
+									Phera, powered by GPT-4 technology.
+									Seamlessly connect and interact with
+									accelerated performance, revolutionizing
+									your AI experience.
 								</p>
 							</div>
 						</div>

@@ -83,9 +83,9 @@ export default function index() {
 	}, []);
 	return (
 		<div>
-			<section className="section-blue-purple text-[#8C8C8C] body-font">
-				<div className="bg-[#27335F]/[0.2] min-h-dvh pb-4 md:pb-28 lg:p-0 flex flex-col pt-20 md:pt-40 lg:pt-1">
-					<div className="container mx-auto flex items-start md:items-center justify-center flex-col max-w-screen-md px-4 lg:pt-40 lg:px-1">
+			<section className="section-blue-purple text-[#8C8C8C] bg-[#030C14] body-font">
+				<div className="bg-[#030C14]/[0.4] min-h-dvh pb-4 md:pb-28 lg:p-0 flex flex-col pt-20 md:pt-40 lg:pt-1">
+					<div className="container mx-auto flex items-start md:items-center justify-center flex-col max-w-screen-md  px-8 lg:pt-40 md:px-1">
 						<div className="bg-gradient-to-r p-px from-[#0500E8] to-[#7000FF] rounded-full mb-5">
 							<button className="bg-[#1F1F1F] rounded-full py-2 px-8 md:px-6 text-lg md:text-2xl ">
 								<span className="bg-gradient-to-r from-[#A5A2E8] to-[#7000FF] font-bold inline-block text-transparent bg-clip-text">
@@ -105,15 +105,50 @@ export default function index() {
 					</div>
 					<div>
 						<div className="">
-							<div className="relative overflow-x-scroll scrollbar-hide">
-								<div className="relative flex gap-1">
+							<div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+								<ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll hover:animate-paused hover:cursor-pointer">
 									{Card_list.map((item, key) => {
-										return <Card key={key} {...item} />;
+										return (
+											<li>
+												<Card key={key} {...item} />
+											</li>
+										);
 									})}
-								</div>
+								</ul>
+								<ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll hover:animate-paused hover:cursor-pointer">
+									{Card_list.map((item, key) => {
+										return (
+											<li>
+												<Card key={key} {...item} />
+											</li>
+										);
+									})}
+								</ul>
 							</div>
 						</div>
 						<div className="">
+							<div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+								<ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-rev hover:animate-paused hover:cursor-pointer">
+									{Card_list.map((item, key) => {
+										return (
+											<li>
+												<Card key={key} {...item} />
+											</li>
+										);
+									})}
+								</ul>
+								<ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-rev hover:animate-paused hover:cursor-pointer">
+									{Card_list.map((item, key) => {
+										return (
+											<li>
+												<Card key={key} {...item} />
+											</li>
+										);
+									})}
+								</ul>
+							</div>
+						</div>
+						{/* <div className="">
 							<div className="relative overflow-x-scroll scrollbar-hide">
 								<div className="relative flex gap-1">
 									{Card_list.map((item, key) => {
@@ -121,7 +156,7 @@ export default function index() {
 									})}
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>
