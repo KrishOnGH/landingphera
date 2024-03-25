@@ -10,16 +10,16 @@ const TWO_CARD = [
 	},
 	{
 		image_src: '/icon/memory.png',
-		heading: 'GPT-4 Integration',
+		heading: 'Internet Connectivity',
 		sub_text:
-			'Leverage the cutting-edge GPT-4 technology to enable advanced language understanding and generation, ensuring seamless interactions with Phera.',
+			"Access real-time information and insights effortlessly with Phera's seamless internet connectivity, providing users with up-to-date and relevant responses.",
 	},
 ];
 
 export default function index() {
 	return (
 		<div>
-			<section className="section-blue-purple text-[#8C8C8C] bg-[#030C14] body-font">
+			<section className="section-blue-purple text-[#8C8C8C] bg-[#030C14] body-font z-30">
 				<div className="bg-[#030C14]/[0.4] min-h-dvh px-5 md:px-1 pb-4 md:pb-28 lg:pb-5 flex flex-col pt-20 md:pt-40 lg:pt-1">
 					<svg
 						className="hidden lg:flex absolute top-0 -left-40"
@@ -113,6 +113,53 @@ export default function index() {
 						</defs>
 					</svg>
 
+					<svg
+						className="hidden lg:flex absolute left-1/3 top-1/3 rounded-full"
+						width="405"
+						height="471"
+						viewBox="0 0 405 471"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g filter="url(#filter0_f_450_16456)">
+							<ellipse
+								cx="687.043"
+								cy="986.039"
+								rx="202.5"
+								ry="235.5"
+								transform="rotate(-180 687.043 986.039)"
+								fill="white"
+								fill-opacity="0.4"
+							/>
+						</g>
+						<defs>
+							<filter
+								id="filter0_f_450_16456"
+								x="-265.457"
+								y="0.538696"
+								width="1905"
+								height="1971"
+								filterUnits="userSpaceOnUse"
+								color-interpolation-filters="sRGB"
+							>
+								<feFlood
+									flood-opacity="0"
+									result="BackgroundImageFix"
+								/>
+								<feBlend
+									mode="normal"
+									in="SourceGraphic"
+									in2="BackgroundImageFix"
+									result="shape"
+								/>
+								<feGaussianBlur
+									stdDeviation="375"
+									result="effect1_foregroundBlur_450_16456"
+								/>
+							</filter>
+						</defs>
+					</svg>
+
 					<div className="container mx-auto flex items-start md:items-center justify-center flex-col max-w-screen-md px-4 lg:pt-40 lg:px-1">
 						<div className="bg-gradient-to-r p-px from-[#0500E8] to-[#7000FF] rounded-full mb-3">
 							<button className="bg-[#1F1F1F] rounded-full py-2 px-8 md:px-6 text-xl ">
@@ -137,7 +184,7 @@ export default function index() {
 						</div>
 					</div>
 					<div className="flex justify-center mt-10 md:mt-16">
-						<div className="flex flex-col sm:px-6 md:px-1 md:flex-row md:gap-x-20 gap-y-10 md:max-w-screen-lg">
+						<div className="flex flex-col z-20 sm:px-6 md:px-1 md:flex-row md:gap-x-20 gap-y-10 md:max-w-screen-lg">
 							{TWO_CARD.map((item, key) => {
 								return <Card key={key} {...item} />;
 							})}

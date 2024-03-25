@@ -104,9 +104,9 @@ export default function index() {
 						</div>
 					</div>
 					<div>
-						<div className="">
+						<div className="parent-hover">
 							<div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-								<ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll hover:animate-paused hover:cursor-pointer">
+								<ul className="row-fin flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll hover:cursor-pointer">
 									{Card_list.map((item, key) => {
 										return (
 											<li>
@@ -115,7 +115,7 @@ export default function index() {
 										);
 									})}
 								</ul>
-								<ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll hover:animate-paused hover:cursor-pointer">
+								<ul className="row-fin flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll hover:cursor-pointer">
 									{Card_list.map((item, key) => {
 										return (
 											<li>
@@ -126,9 +126,9 @@ export default function index() {
 								</ul>
 							</div>
 						</div>
-						<div className="">
+						<div className="parent-hover2">
 							<div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-								<ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-rev hover:animate-paused hover:cursor-pointer">
+								<ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-rev hover:cursor-pointer">
 									{Card_list.map((item, key) => {
 										return (
 											<li>
@@ -137,7 +137,7 @@ export default function index() {
 										);
 									})}
 								</ul>
-								<ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-rev hover:animate-paused hover:cursor-pointer">
+								<ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-rev hover:cursor-pointer">
 									{Card_list.map((item, key) => {
 										return (
 											<li>
@@ -148,15 +148,6 @@ export default function index() {
 								</ul>
 							</div>
 						</div>
-						{/* <div className="">
-							<div className="relative overflow-x-scroll scrollbar-hide">
-								<div className="relative flex gap-1">
-									{Card_list.map((item, key) => {
-										return <Card key={key} {...item} />;
-									})}
-								</div>
-							</div>
-						</div> */}
 					</div>
 				</div>
 			</section>

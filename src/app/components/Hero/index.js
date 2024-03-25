@@ -3,7 +3,7 @@ import React from 'react';
 export default function index() {
 	return (
 		<div>
-			<section className="section-blue-purple text-[#8C8C8C] bg-[#030C14] body-font overflow-hidden">
+			<section className="section-blue-purple text-[#8C8C8C] bg-[#030C14] body-font z-40 overflow-x-hidden">
 
 				<svg
 					className="hidden lg:flex absolute -top-32 -left-8"

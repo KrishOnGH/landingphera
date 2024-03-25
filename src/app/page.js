@@ -9,13 +9,29 @@ import Footer from '@/app/components/Footer';
 export default function Home() {
 	return (
 		<main className="">
-			<Header />
-			<Hero />
-			<Features />
-			<Testimonials />
-			<Pricing />
-			<Numbers />
-			<Footer />
+			<div className="">
+				<div className="sticky top-0 z-50">
+					<Header />
+				</div>
+				<div id="home">
+					<Hero />
+				</div>
+				<div id="features">
+					<Features />
+				</div>
+				<div id="testimonials">
+					<Testimonials />
+				</div>
+				<div id="pricing">
+					<Pricing />
+				</div>
+				<div id="numbers">
+					<Numbers />
+				</div>
+				<div >
+					<Footer />
+				</div>
+			</div>
 		</main>
 	);
 }
